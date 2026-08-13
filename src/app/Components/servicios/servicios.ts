@@ -1,4 +1,5 @@
-import { Component, signal } from '@angular/core';
+import { CurrencyPipe } from '@angular/common';
+import { Component, computed, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 interface ModuloERP {
@@ -6,6 +7,8 @@ interface ModuloERP {
   nombre: string;
   descripcion: string;
   seleccionado: boolean;
+  valor?: number;
+  valorIm?: number;
 }
 interface DetailModulo {
   id: string;
@@ -17,13 +20,14 @@ interface DetailModulo {
 
 @Component({
   selector: 'app-servicios',
-  imports: [RouterModule],
+  imports: [RouterModule,CurrencyPipe],
   standalone: true,
   templateUrl: './servicios.html',
   styleUrl: './servicios.css',
 })
 export class Servicios {
   clickModule = signal<DetailModulo | null>(null);
+  valorMen=signal<number>(0);
   modulos: ModuloERP[] = [
     {
       id: 'inv',
@@ -368,14 +372,30 @@ Reportes por caja`,
       }
     }
   } // Alternar la selección de un módulo
-  toggleModulo(id: string): void {
+toggleModulo(id: string): void {
     const modulo = this.modulos.find((m) => m.id === id);
     if (modulo) {
       modulo.seleccionado = !modulo.seleccionado;
+      
+      // Buscamos los costos correspondientes en el catálogo de detalles
+      const valorMod = this.detail.find((d) => d.id === id);
+      
+      // Asignamos los precios dinámicamente al módulo básico
+      modulo.valor = valorMod?.valorM || 0;
+      modulo.valorIm = valorMod?.valorIm || 0;
     }
   }
-
-  // Obtener solo los servicios que el cliente eligió
+   valorMensualTotal = (() => {
+    return this.modulos
+      .filter((m) => m.seleccionado)
+      .reduce((total, m) => total + (m.valor || 0), 0);
+  });
+  
+  valorImplementacion =(()=>{
+    return this.modulos
+      .filter((m)=>m.seleccionado)
+      .reduce((total,m)=>total +(m.valorIm ||0),0)
+  })
   obtenerServiciosContratados() {
     return this.modulos.filter((m) => m.seleccionado);
   }
