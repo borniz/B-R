@@ -1,0 +1,93 @@
+<div class="max-w-4xl mx-auto my-12 p-6 bg-white rounded-xl shadow-md border border-slate-100">
+  <!-- Encabezado -->
+  <div class="text-center mb-10">
+    <h2 class="text-3xl font-bold text-slate-800 tracking-tight">Personaliza tu Sistema</h2>
+    <p class="text-slate-500 mt-2">Selecciona los módulos de software esenciales para la operación de tu empresa.</p>
+  </div>
+
+  <!-- Lista Ordenada nativa (<ol>) con Tailwind -->
+  <ol class="space-y-4 list-decimal list-inside text-slate-700 font-semibold">
+    @for (modulo of modulos; track modulo.id) {
+      <!-- CORRECCIÓN: El <li> es ahora el contenedor principal para no romper el orden numérico -->
+      <li class="border rounded-xl transition-all duration-300 font-normal block"
+          [class.border-blue-500]="modulo.seleccionado"
+          [class.bg-blue-50/40]="modulo.seleccionado"
+          [class.border-slate-200]="!modulo.seleccionado"
+          [class.bg-white]="!modulo.seleccionado">
+        
+        <!-- Contenedor flex interno para la información y los botones -->
+        <div class="p-5 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <!-- Información del módulo -->
+          <div class="flex-1">
+            <!-- Forzamos list-item y marker para que el número del <ol> aparezca aquí ordenadamente -->
+            <h3 class="text-lg font-semibold text-slate-800 inline-block [display:list-item] [list-style-position:inside] marker:text-blue-600 marker:font-bold marker:text-lg">
+              <span class="ml-1">{{ modulo.nombre }}</span>
+            </h3>
+            <p class="text-sm text-slate-500 mt-1 pl-6">{{ modulo.descripcion }}</p>
+          </div>
+          
+          <!-- Botones de acción con Tailwind -->
+          <div class="w-full sm:w-auto text-right pl-6 sm:pl-0 flex items-center justify-end gap-2">
+            
+            <!-- CORRECCIÓN: Botón Ver Detalles evaluando dinámicamente el Signal clickModule -->
+            <button (click)="selectionModule(modulo.id)"
+                    class="px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 border cursor-pointer bg-slate-50 text-slate-600 border-slate-200 hover:bg-slate-100">
+              {{ clickModule()?.id === modulo.id ? '✕ Ver menos' : 'Ver detalles' }}
+            </button>
+
+            <!-- Botón de añadir módulo -->
+            <button (click)="toggleModulo(modulo.id)"
+                    class="w-full sm:w-auto px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 border cursor-pointer"
+                    [class.bg-blue-600]="modulo.seleccionado"
+                    [class.text-white]="modulo.seleccionado"
+                    [class.border-blue-600]="modulo.seleccionado"
+                    [class.hover:bg-blue-700]="modulo.seleccionado"
+                    [class.bg-white]="!modulo.seleccionado"
+                    [class.text-blue-600]="!modulo.seleccionado"
+                    [class.border-blue-200]="!modulo.seleccionado"
+                    [class.hover:bg-blue-50]="!modulo.seleccionado">
+              {{ modulo.seleccionado ? '✓ Configurado' : 'Añadir módulo' }}
+            </button>
+          </div>
+        </div>
+
+        <!-- DESPLIEGUE: Se abre limpiamente abajo de la fila correspondiente sin romper la lista -->
+        @if (clickModule()?.id === modulo.id) {
+          <div class="px-11 pb-5 pt-2 border-t border-slate-100 bg-slate-50/50 animate-fade-in flex flex-col md:flex-row justify-between gap-6">
+            <div class="flex-1">
+              <h4 class="text-sm font-bold text-blue-600 uppercase tracking-wider mb-2">Alcance del Módulo:</h4>
+              <p class="text-slate-600 text-sm leading-relaxed whitespace-pre-line font-normal">
+                {{ clickModule()?.detalle }}
+              </p>
+            </div>
+
+            <!-- Tarjeta de precios integrada opcional (si quieres mostrar valorM y valorIm que creamos antes) -->
+            @if (clickModule()?.valorM) {
+              <div class="w-full md:w-48 bg-white p-3 rounded-lg border border-slate-200 text-center flex flex-col justify-center shrink-0 shadow-sm">
+                <span class="text-2xl font-black text-slate-800">${{ clickModule()?.valorM }}</span>
+                <span class="text-xs text-slate-400 mt-1">Implementación: ${{ clickModule()?.valorIm }}</span>
+              </div>
+            }
+          </div>
+        }
+      </li>
+    } @empty {
+      <p class="text-center text-slate-400 py-6">No hay módulos disponibles en este catálogo.</p>
+    }
+  </ol>
+
+  <!-- Resumen Inferior Estilo Checkout -->
+  <div class="mt-10 p-6 bg-slate-50 rounded-xl border border-slate-200/60">
+    <h4 class="text-md font-semibold text-slate-700 uppercase tracking-wider mb-3">Módulos seleccionados para cotización:</h4>
+    <div class="flex flex-wrap gap-2">
+      @for (elegido of obtenerServiciosContratados(); track elegido.id) {
+        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-200">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+          {{ elegido.nombre }}
+        </span>
+      } @empty {
+        <p class="text-sm text-slate-400 italic">No has seleccionado ningún servicio aún. Comienza añadiendo uno arriba.</p>
+      }
+    </div>
+  </div>
+</div>

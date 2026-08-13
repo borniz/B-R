@@ -1,0 +1,42 @@
+# ##############################################################################
+# Dependencias y Carpetas de Compilación (NUNCA subir a GitHub)
+# ##############################################################################
+/node_modules/
+/dist/
+/.angular/
+
+# ##############################################################################
+# Archivos de caché y logs de errores
+# ##############################################################################
+/.sass-cache/
+/connect.lock/
+/coverage/
+/libpeerconnection.log/
+npm-debug.log
+yarn-error.log
+yarn-debug.log*
+logfile.log
+.npm/
+
+# ##############################################################################
+# Entornos de Configuración (Contienen credenciales/claves privadas)
+# ##############################################################################
+/src/environments/environment.prod.ts
+/src/environments/environment.ts
+
+# ##############################################################################
+# Configuraciones locales de Editores de Código e IDEs
+# ##############################################################################
+/.vscode/
+/.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ##############################################################################
+# Archivos del Sistema Operativo
+# ##############################################################################
+Thumbs.db
+.DS_Store

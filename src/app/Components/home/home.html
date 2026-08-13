@@ -1,0 +1,119 @@
+<div class="bg-slate-50 min-h-screen font-sans selection:bg-blue-600 selection:text-white">
+  
+  <!-- HERO SECTION (Sección Principal) -->
+  <header class="relative bg-gradient-to-b from-white to-slate-50/50 pt-24 pb-20 overflow-hidden">
+    <!-- Decoración geométrica de fondo (SaaS Style) -->
+    <div class="absolute inset-0 z-0 opacity-30 pointer-events-none">
+      <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-400 rounded-full blur-3xl -mr-40 -mt-40"></div>
+      <div class="absolute bottom-0 left-0 w-[300px] h-[300px] bg-emerald-300 rounded-full blur-3xl -ml-20 -mb-20"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        <!-- Texto Principal / Propuesta de Valor -->
+        <div class="space-y-6 text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-100">
+            <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+            Lanzamiento Oficial
+          </div>
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-800 tracking-tight leading-none">
+            Impulsa tu negocio con <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">B&R Solutions</span>
+          </h1>
+          
+          <p class="text-lg text-slate-600 leading-relaxed max-w-xl">
+            Desarrollamos el ecosistema ERP modular diseñado para evolucionar con tu empresa. Automatiza tus procesos, controla tus inventarios y toma decisiones inteligentes desde una única plataforma.
+          </p>
+          
+          <!-- Botones de Acción -->
+          <div class="flex flex-wrap gap-4 pt-2">
+            <button (click)="irAServicios()"
+                    class="px-6 py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl shadow-lg shadow-blue-600/20 hover:shadow-blue-600/30 transition-all duration-200 cursor-pointer">
+              Personalizar mi ERP
+            </button>
+            <button (click)="agendarDemo()"
+                    class="px-6 py-3.5 bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 font-medium rounded-xl transition-all duration-200 cursor-pointer">
+              Solicitar Demo Gratis
+            </button>
+          </div>
+        </div>
+
+        <!-- Área de la Imagen / Mockup del Software (Solución Limpia) -->
+        <div class="relative lg:ml-4">
+          <!-- Marco contenedor simulando la interfaz del ERP -->
+          <div class="bg-white border border-slate-200/80 rounded-2xl shadow-2xl p-4 md:p-6 transition-all duration-300 hover:scale-[1.01]">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
+              <div class="flex gap-1.5">
+                <span class="w-3 h-3 rounded-full bg-rose-400"></span>
+                <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+                <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+              </div>
+              <span class="text-xs font-medium text-slate-400">://brsolutions.com</span>
+              <div class="w-6"></div>
+            </div>
+
+            <!-- Gráfico Abstracto o Espacio para tu foto -->
+            <div class="bg-slate-50 rounded-xl border border-slate-100 p-8 flex flex-col justify-center items-center min-h-[300px] text-center relative group">
+              <!-- Reemplaza el src con tu ruta de imagen cuando la tengas -->
+              <!-- <img src="assets/dashboard-preview.png" alt="B&R ERP Preview" class="absolute inset-0 w-full h-full object-cover rounded-xl"> -->
+              
+              <!-- Gráfico de marcador de posición profesional -->
+              <div class="space-y-4 max-w-sm">
+                <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mx-auto text-2xl font-bold shadow-md">
+                  B&R
+                </div>
+                <h3 class="text-lg font-bold text-slate-700">Tu Próximo Panel de Control</h3>
+                <p class="text-xs text-slate-400 leading-normal">
+                  Aquí se previsualizará la interfaz en la nube del ERP automatizado. Una herramienta veloz y adaptable a cualquier dispositivo móvil o de escritorio.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- SECCIÓN DE CARACTERÍSTICAS CORPORATIVAS -->
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Beneficio 1 -->
+      <div class="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm">
+        <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center font-bold mb-4">
+          ✓
+        </div>
+        <h3 class="text-lg font-bold text-slate-800 mb-2">Pago por lo que usas</h3>
+        <p class="text-sm text-slate-500 leading-relaxed">
+          Sin contratos forzosos ni paquetes inflados. Arma la infraestructura digital de tu empresa seleccionando únicamente los módulos operativos que requieres.
+        </p>
+      </div>
+
+      <!-- Beneficio 2 -->
+      <div class="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm">
+        <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center font-bold mb-4">
+          ⚡
+        </div>
+        <h3 class="text-lg font-bold text-slate-800 mb-2">Implementación Inmediata</h3>
+        <p class="text-sm text-slate-500 leading-relaxed">
+          Nuestra tecnología nativa en la nube permite que tu software esté configurado, enlazado y listo para facturar o gestionar stock en tiempo récord.
+        </p>
+      </div>
+
+      <!-- Beneficio 3 -->
+      <div class="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm">
+        <div class="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center font-bold mb-4">
+          🛡️
+        </div>
+        <h3 class="text-lg font-bold text-slate-800 mb-2">Seguridad de Nivel Empresarial</h3>
+        <p class="text-sm text-slate-500 leading-relaxed">
+          Tus catálogos, costos, históricos financieros y bases de datos de clientes viajan de forma encriptada con respaldos automatizados diariamente.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
