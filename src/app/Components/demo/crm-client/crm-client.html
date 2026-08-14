@@ -1,0 +1,106 @@
+<section class="max-w-6xl mx-auto my-16 p-8 bg-white rounded-2xl shadow-xl border border-slate-100">
+  <!-- BOTÓN VOLVER: Estilizado, sutil y profesional -->
+      <button (click)="regresarAlCatalogo()" 
+              class="flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-slate-300 bg-slate-700/60 rounded-lg hover:bg-slate-700 hover:text-white transition-all duration-200 cursor-pointer border border-slate-600/30">
+        <span>←</span>
+        <span>Volver a Módulos</span>
+      </button>
+  <!-- Encabezado Enfocado en el Cliente -->
+  <div class="text-center max-w-3xl mx-auto mb-12">
+    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-100 uppercase tracking-wider">
+      Módulo de Relación Comercial
+    </span>
+    <h2 class="text-3xl sm:text-4xl font-black text-slate-800 tracking-tight mt-3">
+      CRM y Gestión de Clientes
+    </h2>
+    <p class="text-slate-500 mt-3 leading-relaxed">
+      Fideliza a tus compradores, haz un seguimiento impecable de prospectos y automatiza las tareas de tu equipo de ventas en un solo lugar.
+    </p>
+  </div>
+
+  <!-- Contenedor Principal: Explicación vs Demostración Visual -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    
+    <!-- LADO IZQUIERDO: Propuesta de Valor - Qué resolverás -->
+    <div class="space-y-6">
+      <h3 class="text-xl font-bold text-slate-800">¿Qué resolverás con este módulo?</h3>
+      
+      <div class="space-y-4">
+        <!-- Tarjeta de Beneficio 1: Historial y Ficha de Cliente -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">🗂️</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Ficha de cliente e historial unificado</h4>
+            <p class="text-xs text-slate-500 mt-1">Accede a una base de datos centralizada con la información de tus clientes y contactos. Visualiza en un segundo el historial completo de compras, notas comerciales y deudas previas. Toda la información de tu cartera de clientes se queda en tu empresa, sin depender de cuadernos o chats de WhatsApp de tus empleados.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Beneficio 2: Seguimientos y Tareas -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">🤝</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Seguimientos automáticos y agenda de tareas</h4>
+            <p class="text-xs text-slate-500 mt-1">Organiza las actividades diarias de tu equipo. El sistema te permite programar tareas, llamadas de postventa y alertas de seguimiento automáticas para que ningún cliente potencial se enfríe y pierdas una oportunidad por falta de comunicación.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Beneficio 3: Embudo de Oportunidades y Segmentación -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">🎯</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Embudo de oportunidades y segmentación</h4>
+            <p class="text-xs text-slate-500 mt-1">Clasifica y segmenta a tus clientes según sus hábitos de compra o zonas geográficas. Controla tu embudo comercial identificando qué propuestas están en negociación, cuáles están por cerrarse y mide el rendimiento real de tus asesores.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ficha Técnica de lo que Incluye -->
+      <div class="p-4 bg-blue-50/50 border border-blue-100/70 rounded-xl text-xs sm:text-sm text-slate-600 leading-relaxed">
+        <strong class="text-blue-700 font-bold block mb-1">Características Técnicas Incluidas:</strong>
+        Base de datos de Clientes • Gestión de Contactos • Segmentación de mercado • Historial centralizado de interacciones • Control de Actividades diarias • Alertas de Seguimientos • Embudo de Oportunidades de venta • Asignación de Tareas • Módulo de Comunicaciones comerciales.
+      </div>
+    </div>
+
+    <!-- LADO DERECHO: El video de Canva en bucle automático visible -->
+    <div class="relative">
+      <!-- Contenedor estilo Pantalla de Computadora -->
+      <div class="bg-slate-900 rounded-2xl shadow-2xl overflow-hidden border border-slate-800">
+        
+        <!-- Barra superior del Navegador Simulado -->
+        <div class="bg-slate-800 px-4 py-3 flex items-center justify-between">
+          <div class="flex gap-1.5">
+            <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+          </div>
+          <div class="w-12"></div>
+        </div>
+
+        <!-- Contenedor del Video -->
+        <div class="relative aspect-video bg-slate-950 flex items-center justify-center">
+          <img src="/img/crm-client.jpg" alt="" class="w-full h-full object-cover" >
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/20 to-transparent pointer-events-none"></div>
+        </div>
+
+      </div>
+      <p class="text-center text-xs text-slate-400 mt-3 italic">
+        💡 Vista de control: embudo de ventas, programación de llamadas y perfiles de clientes corporativos.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Botón de acción rápido al final de la explicación -->
+  <div class="mt-12 p-6 bg-blue-50/50 rounded-xl border border-blue-100 flex flex-col sm:flex-row justify-between items-center gap-4">
+    <div class="text-center sm:text-left">
+      <h4 class="font-bold text-slate-800">¿Quieres mejorar el seguimiento de tus ventas y fidelizar a tus clientes?</h4>
+      <p class="text-xs text-slate-500">Añade el módulo de CRM para centralizar las comunicaciones de tu equipo y potenciar tus relaciones comerciales.</p>
+    </div>
+    <button 
+            class="px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm rounded-xl shadow-md transition-all duration-200 pointer cursor-pointer shrink-0">
+      Añadir Módulo CRM
+    </button>
+  </div>
+
+</section>
+

@@ -1,6 +1,6 @@
 import { CurrencyPipe } from '@angular/common';
 import { Component, computed, signal } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Route, Router, RouterModule } from '@angular/router';
 
 interface ModuloERP {
   id: string;
@@ -28,6 +28,7 @@ interface DetailModulo {
 export class Servicios {
   clickModule = signal<DetailModulo | null>(null);
   valorMen=signal<number>(0);
+  constructor(private router:Router){}
   modulos: ModuloERP[] = [
     {
       id: 'inv',
@@ -366,6 +367,7 @@ Reportes por caja`,
     if (this.clickModule()?.id === id) {
       this.clickModule.set(null);
     } else {
+      this.router.navigate([`/${id}`])
       const infoExtendida = this.detail.find((d) => d.id === id);
       if (infoExtendida) {
         this.clickModule.set(infoExtendida);

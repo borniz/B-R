@@ -1,0 +1,106 @@
+<section class="max-w-6xl mx-auto my-16 p-8 bg-white rounded-2xl shadow-xl border border-slate-100">
+  <!-- BOTÓN VOLVER: Estilizado, sutil y profesional -->
+      <button (click)="regresarAlCatalogo()" 
+              class="flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-slate-300 bg-slate-700/60 rounded-lg hover:bg-slate-700 hover:text-white transition-all duration-200 cursor-pointer border border-slate-600/30">
+        <span>←</span>
+        <span>Volver a Módulos</span>
+      </button>
+  <!-- Encabezado Enfocado en el Cliente -->
+  <div class="text-center max-w-3xl mx-auto mb-12">
+    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-violet-50 text-violet-700 border border-violet-100 uppercase tracking-wider">
+      Módulo de Abastecimiento Logístico
+    </span>
+    <h2 class="text-3xl sm:text-4xl font-black text-slate-800 tracking-tight mt-3">
+      Compras y Gestión de Proveedores
+    </h2>
+    <p class="text-slate-500 mt-3 leading-relaxed">
+      Optimiza tus costos de adquisición, gestiona órdenes de suministro y mantén un control milimétrico sobre tus cuentas por pagar.
+    </p>
+  </div>
+
+  <!-- Contenedor Principal: Explicación vs Demostración Visual -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    
+    <!-- LADO IZQUIERDO: Propuesta de Valor - Qué resolverás -->
+    <div class="space-y-6">
+      <h3 class="text-xl font-bold text-slate-800">¿Qué resolverás con este módulo?</h3>
+      
+      <div class="space-y-4">
+        <!-- Tarjeta de Beneficio 1: Órdenes y Cotizaciones -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">📝</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Compara cotizaciones y automatiza órdenes</h4>
+            <p class="text-xs text-slate-500 mt-1">Registra los presupuestos de diferentes proveedores y genera órdenes de compra formales en segundos. Esto te permite garantizar que siempre estás adquiriendo mercancía al mejor costo disponible del mercado, protegiendo tus márgenes de ganancia.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Beneficio 2: Recepción y Devoluciones -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">📦</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Control de recepción e ingreso a bodega</h4>
+            <p class="text-xs text-slate-500 mt-1">Cuando llegue el camión de mercancía, el sistema contrasta lo recibido físicamente contra la orden original. Si llega algo dañado o incompleto, puedes procesar la devolución en el software de forma transparente y ajustar el inventario de inmediato.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Beneficio 3: Cuentas por Pagar e Historial -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">📅</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Historial de costos y cuentas por pagar claras</h4>
+            <p class="text-xs text-slate-500 mt-1">Almacena las facturas de proveedor y monitorea tus compromisos financieros a crédito. El ERP te brinda un historial de compras impecable y un panel de cuentas por pagar básicas para que planees tus egresos sin retrasos ni penalizaciones.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ficha Técnica de lo que Incluye -->
+      <div class="p-4 bg-violet-50/50 border border-violet-100/70 rounded-xl text-xs sm:text-sm text-slate-600 leading-relaxed">
+        <strong class="text-violet-700 font-bold block mb-1">Características Técnicas Incluidas:</strong>
+        Catálogo de Proveedores • Cotizaciones recibidas • Órdenes de Compra formalizadas • Módulo de Recepción física • Vinculación con Facturas de proveedor • Control de Devoluciones logísticas • Historial analítico de Costos • Cuentas por Pagar básicas.
+      </div>
+    </div>
+
+    <!-- LADO DERECHO: El video de Canva en bucle automático visible -->
+    <div class="relative">
+      <!-- Contenedor estilo Pantalla de Computadora -->
+      <div class="bg-slate-900 rounded-2xl shadow-2xl overflow-hidden border border-slate-800">
+        
+        <!-- Barra superior del Navegador Simulado -->
+        <div class="bg-slate-800 px-4 py-3 flex items-center justify-between">
+          <div class="flex gap-1.5">
+            <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+          </div>
+          <div class="w-12"></div>
+        </div>
+
+        <!-- Contenedor del Video -->
+        <div class="relative aspect-video bg-slate-950 flex items-center justify-center">
+          <img src="/img/comp-prov.jpg" alt="" class="w-full h-full object-cover" >
+
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/20 to-transparent pointer-events-none"></div>
+        </div>
+
+      </div>
+      <p class="text-center text-xs text-slate-400 mt-3 italic">
+        💡 Previsualización del flujo logístico: órdenes emitidas, recepciones de almacén y registro de egresos.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Botón de acción rápido al final de la explicación -->
+  <div class="mt-12 p-6 bg-violet-50/50 rounded-xl border border-violet-100 flex flex-col sm:flex-row justify-between items-center gap-4">
+    <div class="text-center sm:text-left">
+      <h4 class="font-bold text-slate-800">¿Quieres optimizar los costos de abastecimiento de tu empresa?</h4>
+      <p class="text-xs text-slate-500">Añade el módulo de Compras y Proveedores para sincronizar tus pedidos físicos con tus registros financieros.</p>
+    </div>
+    <button 
+            class="px-5 py-3 bg-violet-600 hover:bg-violet-700 text-white font-medium text-sm rounded-xl shadow-md transition-all duration-200 cursor-pointer shrink-0">
+      Añadir Módulo Compras
+    </button>
+  </div>
+
+</section>

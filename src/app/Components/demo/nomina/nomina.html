@@ -1,0 +1,105 @@
+<section class="max-w-6xl mx-auto my-16 p-8 bg-white rounded-2xl shadow-xl border border-slate-100">
+  <!-- BOTÓN VOLVER: Estilizado, sutil y profesional -->
+      <button (click)="regresarAlCatalogo()" 
+              class="flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-slate-300 bg-slate-700/60 rounded-lg hover:bg-slate-700 hover:text-white transition-all duration-200 cursor-pointer border border-slate-600/30">
+        <span>←</span>
+        <span>Volver a Módulos</span>
+      </button>
+  <!-- Encabezado Enfocado en el Cliente -->
+  <div class="text-center max-w-3xl mx-auto mb-12">
+    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-100 uppercase tracking-wider">
+      Módulo de Talento Humano
+    </span>
+    <h2 class="text-3xl sm:text-4xl font-black text-slate-800 tracking-tight mt-3">
+      Gestión de Nómina y Empleados
+    </h2>
+    <p class="text-slate-500 mt-3 leading-relaxed">
+      Automatiza la liquidación de salarios de tu personal, administra contratos laborales y gestiona novedades prestacionales sin errores manuales.
+    </p>
+  </div>
+
+  <!-- Contenedor Principal: Explicación vs Demostración Visual -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    
+    <!-- LADO IZQUIERDO: Propuesta de Valor - Qué resolverás -->
+    <div class="space-y-6">
+      <h3 class="text-xl font-bold text-slate-800">¿Qué resolverás con este módulo?</h3>
+      
+      <div class="space-y-4">
+        <!-- Tarjeta de Beneficio 1: Expediente de Empleados y Contratos -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">👥</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Control total de contratos y expedientes de empleados</h4>
+            <p class="text-xs text-slate-500 mt-1">Centraliza toda la información de tus trabajadores, fechas de ingreso, tipos de contratos y conceptos fijos de pago. Mantén copias ordenadas e historiales laborales de todo tu equipo en un único entorno en la nube seguro y protegido.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Beneficio 2: Gestión de Novedades y Liquidación -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">⏱️</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Registro de novedades y liquidaciones automatizadas</h4>
+            <p class="text-xs text-slate-500 mt-1">Olvídate de las cuentas complejas a mano. Registra novedades del mes como horas extras, comisiones, ausencias, faltas o incapacidades. El software procesa la liquidación neta, calcula las prestaciones y la seguridad social de ley al instante.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Beneficio 3: Reportes y Nómina Electrónica -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">📊</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Reportes financieros de nómina clara</h4>
+            <p class="text-xs text-slate-500 mt-1">Genera colillas de pago impecables para tus empleados y reportes de costos para la contabilidad del negocio de forma inmediata. Cuenta con la base técnica para enlazar informes de nómina electrónica cuando tu empresa así lo exija de forma opcional.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ficha Técnica de lo que Incluye -->
+      <div class="p-4 bg-emerald-50/50 border border-emerald-100/70 rounded-xl text-xs sm:text-sm text-slate-600 leading-relaxed">
+        <strong class="text-emerald-800 font-bold block mb-1">Características Técnicas Incluidas:</strong>
+        Catálogo de Empleados • Gestión de Contratos laborales • Configuración de Conceptos de pago • Reporte de Novedades • Liquidación automatizada de salarios • Cálculo de Prestaciones • Aportes de Seguridad social • Reportes analíticos de costos de personal.
+      </div>
+    </div>
+
+    <!-- LADO DERECHO: El video de Canva en bucle automático visible -->
+    <div class="relative">
+      <!-- Contenedor estilo Pantalla de Computadora -->
+      <div class="bg-slate-900 rounded-2xl shadow-2xl overflow-hidden border border-slate-800">
+        
+        <!-- Barra superior del Navegador Simulado -->
+        <div class="bg-slate-800 px-4 py-3 flex items-center justify-between">
+          <div class="flex gap-1.5">
+            <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+          </div>
+          <div class="w-12"></div>
+        </div>
+
+        <!-- Contenedor del Video -->
+        <div class="relative aspect-video bg-slate-950 flex items-center justify-center">
+          <img src="/img/nomina.jpg" alt="" class="w-full h-full object-cover" >
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/20 to-transparent pointer-events-none"></div>
+        </div>
+
+      </div>
+      <p class="text-center text-xs text-slate-400 mt-3 italic">
+        💡 Monitor de personal: liquidación mensual, comprobantes de sueldo y control analítico de nómina.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Botón de acción rápido al final de la explicación -->
+  <div class="mt-12 p-6 bg-emerald-50/50 rounded-xl border border-emerald-100 flex flex-col sm:flex-row justify-between items-center gap-4">
+    <div class="text-center sm:text-left">
+      <h4 class="font-bold text-slate-800">¿Quieres simplificar y dar transparencia al pago de tus empleados?</h4>
+      <p class="text-xs text-slate-500">Añade el módulo de Nómina a tu cotización para unificar la gestión de tu talento humano con la administración general.</p>
+    </div>
+    <button 
+            class="px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm rounded-xl shadow-md transition-all duration-200 cursor-pointer shrink-0">
+      Añadir Módulo Nómina
+    </button>
+  </div>
+
+</section>

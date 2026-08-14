@@ -1,0 +1,105 @@
+<section class="max-w-6xl mx-auto my-16 p-8 bg-white rounded-2xl shadow-xl border border-slate-100">
+  <!-- BOTÓN VOLVER: Estilizado, sutil y profesional -->
+      <button (click)="regresarAlCatalogo()" 
+              class="flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-slate-300 bg-slate-700/60 rounded-lg hover:bg-slate-700 hover:text-white transition-all duration-200 cursor-pointer border border-slate-600/30">
+        <span>←</span>
+        <span>Volver a Módulos</span>
+      </button>
+  <!-- Encabezado Enfocado en el Cliente -->
+  <div class="text-center max-w-3xl mx-auto mb-12">
+    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-100 uppercase tracking-wider">
+      Módulo de Atención Directa
+    </span>
+    <h2 class="text-3xl sm:text-4xl font-black text-slate-800 tracking-tight mt-3">
+      Punto de Venta (POS) y Caja Rápida
+    </h2>
+    <p class="text-slate-500 mt-3 leading-relaxed">
+      Optimizado para negocios que venden directamente al consumidor. Acelera tu facturación de mostrador, integra escáneres y asegura el control del efectivo.
+    </p>
+  </div>
+
+  <!-- Contenedor Principal: Explicación vs Demostración Visual -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    
+    <!-- LADO IZQUIERDO: Propuesta de Valor - Qué resolverás -->
+    <div class="space-y-6">
+      <h3 class="text-xl font-bold text-slate-800">¿Qué resolverás con este módulo?</h3>
+      
+      <div class="space-y-4">
+        <!-- Tarjeta de Beneficio 1: Venta Rápida y Código de Barras -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">⚡</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Ventas ultra rápidas con código de barras</h4>
+            <p class="text-xs text-slate-500 mt-1">Atiende a tus clientes en segundos. Conecta cualquier lector de código de barras para añadir productos al carrito instantáneamente, aplica descuentos autorizados al momento y procesa múltiples medios de pago (efectivo, tarjetas, transferencias) sin retrasar la fila.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Beneficio 2: Aperturas, Arqueos y Cierres -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">🔒</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Control estricto de cajeros y arqueos de caja</h4>
+            <p class="text-xs text-slate-500 mt-1">Supervisa la operación de tu mostrador de principio a fin. Gestiona la apertura de turnos con base fija, registra retiros parciales de dinero y automatiza los arqueos y cierres de caja por cajero, identificando inmediatamente cualquier descuadre de dinero.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Beneficio 3: Impresión, Devoluciones y Reportes -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">📊</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Impresión de tickets, devoluciones y reportes</h4>
+            <p class="text-xs text-slate-500 mt-1">Envía las comandas o recibos directo a tus impresoras térmicas de tickets. Gestiona cambios o devoluciones de mercancía directamente en la pantalla de cobro y analiza los reportes detallados por caja para medir la rentabilidad de cada punto de atención.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ficha Técnica de lo que Incluye -->
+      <div class="p-4 bg-blue-50/50 border border-blue-100/70 rounded-xl text-xs sm:text-sm text-slate-600 leading-relaxed">
+        <strong class="text-blue-700 font-bold block mb-1">Características Técnicas Incluidas:</strong>
+        Interfaz POS ágil • Control de terminales de Caja • Perfiles de Cajeros independientes • Procesos de Apertura y Cierre • Arqueos automatizados de dinero • Facturación por Venta rápida • Integración con Códigos de barras • Múltiples Medios de pago • Impresión de tickets POS • Control de Devoluciones y Descuentos en mostrador • Reportes analíticos por caja.
+      </div>
+    </div>
+
+    <!-- LADO DERECHO: El video de Canva en bucle automático visible -->
+    <div class="relative">
+      <!-- Contenedor estilo Pantalla de Computadora -->
+      <div class="bg-slate-900 rounded-2xl shadow-2xl overflow-hidden border border-slate-800">
+        
+        <!-- Barra superior del Navegador Simulado -->
+        <div class="bg-slate-800 px-4 py-3 flex items-center justify-between">
+          <div class="flex gap-1.5">
+            <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+          </div>
+          <div class="w-12"></div>
+        </div>
+
+        <!-- Contenedor del Video -->
+        <div class="relative aspect-video bg-slate-950 flex items-center justify-center">
+          <img src="/img/post.jpg" alt="" class="w-full h-full object-cover" >
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/20 to-transparent pointer-events-none"></div>
+        </div>
+
+      </div>
+      <p class="text-center text-xs text-slate-400 mt-3 italic">
+        💡 Interfaz de mostrador: facturación express, botones de acceso rápido y monitoreo de dinero en caja.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Botón de acción rápido al final de la explicación -->
+  <div class="mt-12 p-6 bg-blue-50/50 rounded-xl border border-blue-100 flex flex-col sm:flex-row justify-between items-center gap-4">
+    <div class="text-center sm:text-left">
+      <h4 class="font-bold text-slate-800">¿Quieres un mostrador ágil, rápido y completamente blindado contra descuadres?</h4>
+      <p class="text-xs text-slate-500">Añade el módulo POS a tu cotización para habilitar las pantallas de venta rápida al consumidor final.</p>
+    </div>
+    <button 
+            class="px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm rounded-xl shadow-md transition-all duration-200 cursor-pointer shrink-0">
+      Añadir Módulo POS
+    </button>
+  </div>
+
+</section>

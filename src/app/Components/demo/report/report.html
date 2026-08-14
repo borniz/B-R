@@ -1,0 +1,105 @@
+<section class="max-w-6xl mx-auto my-16 p-8 bg-white rounded-2xl shadow-xl border border-slate-100">
+  <!-- BOTÓN VOLVER: Estilizado, sutil y profesional -->
+      <button (click)="regresarAlCatalogo()" 
+              class="flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-slate-300 bg-slate-700/60 rounded-lg hover:bg-slate-700 hover:text-white transition-all duration-200 cursor-pointer border border-slate-600/30">
+        <span>←</span>
+        <span>Volver a Módulos</span>
+      </button>
+  <!-- Encabezado Enfocado en el Cliente -->
+  <div class="text-center max-w-3xl mx-auto mb-12">
+    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-100 uppercase tracking-wider">
+      Módulo de Inteligencia de Negocio
+    </span>
+    <h2 class="text-3xl sm:text-4xl font-black text-slate-800 tracking-tight mt-3">
+      Reportes Estadísticos e Indicadores (BI)
+    </h2>
+    <p class="text-slate-500 mt-3 leading-relaxed">
+      Transforma los datos diarios de tu operación en gráficos estratégicos. Toma decisiones comerciales respaldadas por estadísticas en tiempo real.
+    </p>
+  </div>
+
+  <!-- Contenedor Principal: Explicación vs Demostración Visual -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    
+    <!-- LADO IZQUIERDO: Propuesta de Valor - Qué resolverás -->
+    <div class="space-y-6">
+      <h3 class="text-xl font-bold text-slate-800">¿Qué resolverás con este módulo?</h3>
+      
+      <div class="space-y-4">
+        <!-- Tarjeta de Beneficio 1: Dashboard y Control Global -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">📈</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Dashboard ejecutivo con indicadores clave</h4>
+            <p class="text-xs text-slate-500 mt-1">Visualiza desde una sola pantalla los indicadores más importantes de tu empresa: rendimiento de ventas, costos de compras, rotación de inventarios y estado de la cartera. Monitorea la salud financiera de tus sucursales al instante sin consolidar datos a mano.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Beneficio 2: Utilidad y Flujo de Caja -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">💰</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Análisis real de utilidad y flujo de caja</h4>
+            <p class="text-xs text-slate-500 mt-1">Conoce con precisión matemática el margen de ganancia real de tu negocio restando automáticamente los costos operativos. Evalúa el comportamiento del flujo de efectivo para planificar inversiones o compras de stock con total seguridad.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Beneficio 3: Comparativos y Exportación -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">📋</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Gráficos comparativos y reportes a la medida</h4>
+            <p class="text-xs text-slate-500 mt-1">Compara el rendimiento de ventas de este mes frente al año anterior para identificar tendencias de mercado. Configura reportes personalizados según las necesidades de tu gerencia y expórtalos limpiamente a formatos compatibles en un solo clic.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ficha Técnica de lo que Incluye -->
+      <div class="p-4 bg-indigo-50/50 border border-indigo-100/70 rounded-xl text-xs sm:text-sm text-slate-600 leading-relaxed">
+        <strong class="text-indigo-700 font-bold block mb-1">Características Técnicas Incluidas:</strong>
+        Dashboard ejecutivo en la nube • Métricas de Ventas analíticas • Auditoría de Compras • Rotación de Inventarios • Análisis de Cartera vencida • Cálculo automático de Utilidad neta • Gráficos de Flujo de caja • Indicadores clave de rendimiento (KPIs) • Informes Comparativos de periodos • Herramientas de Exportación masiva • Constructor de Reportes personalizados.
+      </div>
+    </div>
+
+    <!-- LADO DERECHO: El video de Canva en bucle automático visible -->
+    <div class="relative">
+      <!-- Contenedor estilo Pantalla de Computadora -->
+      <div class="bg-slate-900 rounded-2xl shadow-2xl overflow-hidden border border-slate-800">
+        
+        <!-- Barra superior del Navegador Simulado -->
+        <div class="bg-slate-800 px-4 py-3 flex items-center justify-between">
+          <div class="flex gap-1.5">
+            <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+          </div>
+          <div class="w-12"></div>
+        </div>
+
+        <!-- Contenedor del Video -->
+        <div class="relative aspect-video bg-slate-950 flex items-center justify-center">
+          <img src="/img/report.jpg" alt="" class="w-full h-full object-cover" >
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/20 to-transparent pointer-events-none"></div>
+        </div>
+
+      </div>
+      <p class="text-center text-xs text-slate-400 mt-3 italic">
+        💡 Pantalla de Inteligencia de Negocios: gráficas de barras comparativas, balances de utilidad y márgenes comerciales en vivo.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Botón de acción rápido al final de la explicación -->
+  <div class="mt-12 p-6 bg-indigo-50/50 rounded-xl border border-indigo-100 flex flex-col sm:flex-row justify-between items-center gap-4">
+    <div class="text-center sm:text-left">
+      <h4 class="font-bold text-slate-800">¿Quieres liderar tu empresa con datos reales y proyecciones exactas?</h4>
+      <p class="text-xs text-slate-500">Añade el módulo de Reportes y BI a tu cotización para activar los tableros avanzados de analítica gerencial.</p>
+    </div>
+    <button 
+            class="px-5 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium text-sm rounded-xl shadow-md transition-all duration-200 cursor-pointer shrink-0">
+      Añadir Módulo Reportes
+    </button>
+  </div>
+
+</section>

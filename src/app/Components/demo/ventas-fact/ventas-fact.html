@@ -1,0 +1,112 @@
+<section class="max-w-6xl mx-auto my-16 p-8 bg-white rounded-2xl shadow-xl border border-slate-100">
+  <!-- BOTÓN VOLVER: Estilizado, sutil y profesional -->
+      <button (click)="regresarAlCatalogo()" 
+              class="flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-slate-300 bg-slate-700/60 rounded-lg hover:bg-slate-700 hover:text-white transition-all duration-200 cursor-pointer border border-slate-600/30">
+        <span>←</span>
+        <span>Volver a Módulos</span>
+      </button>
+  <!-- Encabezado Enfocado en el Cliente -->
+  <div class="text-center max-w-3xl mx-auto mb-12">
+    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-100 uppercase tracking-wider">
+      ¿Cómo funciona nuestro ERP?
+    </span>
+    <h2 class="text-3xl sm:text-4xl font-black text-slate-800 tracking-tight mt-3">
+      Ventas y Facturación Comercial Fluida
+    </h2>
+    <p class="text-slate-500 mt-3 leading-relaxed">
+      Acelera tus cajas, despacha pedidos y emite comprobantes profesionales al instante. Dale a tu negocio la velocidad que tus clientes exigen.
+    </p>
+  </div>
+
+  <!-- Contenedor Principal: Explicación vs Demostración Visual -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    
+    <!-- LADO IZQUIERDO: Transformación del Negocio (Propuesta de Valor - Qué resolverás) -->
+    <div class="space-y-6">
+      <h3 class="text-xl font-bold text-slate-800">¿Qué resolverás con este módulo?</h3>
+      
+      <div class="space-y-4">
+        <!-- Tarjeta de Beneficio 1: Filas y velocidad -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">⚡</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Elimina las largas filas en tu caja</h4>
+            <p class="text-xs text-slate-500 mt-1">Busca productos al instante, aplica descuentos autorizados en un clic y emite notas de venta o facturas comerciales de inmediato en formato PDF limpio.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Beneficio 2: Cotizaciones a facturas -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">📝</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Convierte cotizaciones en ventas con un botón</h4>
+            <p class="text-xs text-slate-500 mt-1">No vuelvas a transcribir un pedido. Pasa un presupuesto aprobado a una orden de despacho o factura final en un segundo, descontando el inventario automáticamente.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Beneficio 3: Cuentas claras e historial -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">📊</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Cierre de caja e historial sin errores</h4>
+            <p class="text-xs text-slate-500 mt-1">Monitorea tus ingresos, gestiona abonos de clientes y procesa devoluciones o notas crédito/débito de forma transparente. Sabrás exactamente cuánto vendiste al terminar el día.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nota aclaratoria sobre Facturación Electrónica Opcional -->
+      <div class="p-4 bg-indigo-50/50 border border-indigo-100/70 rounded-xl text-xs sm:text-sm text-slate-600 leading-relaxed">
+        <strong class="text-indigo-700 font-bold block mb-1">Nota Fiscal Importante:</strong>
+        El software opera de forma estándar con facturación comercial tradicional. La integración con sistemas de Facturación Electrónica es <span class="font-bold text-indigo-700">100% opcional</span> y se puede activar cuando tu negocio lo requiera.
+      </div>
+    </div>
+
+    <!-- LADO DERECHO: El video de Canva en bucle automático visible -->
+    <div class="relative">
+      <!-- Contenedor estilo Pantalla de Computadora -->
+      <div class="bg-slate-900 rounded-2xl shadow-2xl overflow-hidden border border-slate-800">
+        
+        <!-- Barra superior del Navegador Simulado -->
+        <div class="bg-slate-800 px-4 py-3 flex items-center justify-between">
+          <div class="flex gap-1.5">
+            <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+          </div>
+          <span class="text-xs font-mono text-slate-400">br-solutions-billing.mp4</span>
+          <div class="w-12"></div>
+        </div>
+
+        <!-- Contenedor del Video -->
+        <div class="relative aspect-video bg-slate-950 flex items-center justify-center">
+          <video src="videos/facturacion-ventas.mp4" 
+                 autoplay 
+                 loop 
+                 muted 
+                 playsinline 
+                 class="absolute inset-0 w-full h-full object-cover opacity-90">
+          </video>
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/20 to-transparent pointer-events-none"></div>
+        </div>
+
+      </div>
+      <p class="text-center text-xs text-slate-400 mt-3 italic">
+        💡 Vista previa conceptual de la emisión de comprobantes, pedidos y control de clientes en la nube.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Botón de acción rápido al final de la explicación -->
+  <div class="mt-12 p-6 bg-indigo-50/50 rounded-xl border border-indigo-100 flex flex-col sm:flex-row justify-between items-center gap-4">
+    <div class="text-center sm:text-left">
+      <h4 class="font-bold text-slate-800">¿Listo para agilizar tu facturación y organizar tus ingresos?</h4>
+      <p class="text-xs text-slate-500">Puedes añadir este módulo comercial a tu cotización y ver el valor mensual acumulado inmediatamente.</p>
+    </div>
+    <button
+            class="px-5 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium text-sm rounded-xl shadow-md transition-all duration-200 cursor-pointer shrink-0">
+      Añadir Módulo de Ventas>
+    </button>
+  </div>
+
+</section>

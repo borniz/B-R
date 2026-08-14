@@ -1,0 +1,105 @@
+<section class="max-w-6xl mx-auto my-16 p-8 bg-white rounded-2xl shadow-xl border border-slate-100">
+  <!-- BOTÓN VOLVER: Estilizado, sutil y profesional -->
+      <button (click)="regresarAlCatalogo()" 
+              class="flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-slate-300 bg-slate-700/60 rounded-lg hover:bg-slate-700 hover:text-white transition-all duration-200 cursor-pointer border border-slate-600/30">
+        <span>←</span>
+        <span>Volver a Módulos</span>
+      </button>
+  <!-- Encabezado Enfocado en el Cliente -->
+  <div class="text-center max-w-3xl mx-auto mb-12">
+    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-100 uppercase tracking-wider">
+      Módulo Central Financiero
+    </span>
+    <h2 class="text-3xl sm:text-4xl font-black text-slate-800 tracking-tight mt-3">
+      Contabilidad General Automatizada
+    </h2>
+    <p class="text-slate-500 mt-3 leading-relaxed">
+      Sincroniza tus operaciones de caja, inventario y facturación de forma directa con los libros oficiales y reportes contables del negocio.
+    </p>
+  </div>
+
+  <!-- Contenedor Principal: Explicación vs Demostración Visual -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    
+    <!-- LADO IZQUIERDO: Propuesta de Valor - Qué resolverás -->
+    <div class="space-y-6">
+      <h3 class="text-xl font-bold text-slate-800">¿Qué resolverás con este módulo?</h3>
+      
+      <div class="space-y-4">
+        <!-- Tarjeta de Beneficio 1: Comprobantes y Asientos Automáticos -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">📝</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Asientos y comprobantes en tiempo real</h4>
+            <p class="text-xs text-slate-500 mt-1">Cada venta, cobro de cartera o pago a proveedores genera un asiento contable automático bajo el plan de cuentas de la empresa. Asigna los movimientos a terceros de forma transparente, eliminando las digitaciones manuales y los retrasos al final del mes.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Beneficio 2: Impuestos y Cierres sin dolor -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">⚖️</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Control de impuestos y cierres de periodo</h4>
+            <p class="text-xs text-slate-500 mt-1">Calcula los impuestos correspondientes en cada transacción de forma nativa. Facilita los cierres mensuales o anuales consolidando las cuentas por cobrar y por pagar, asegurando que tu contabilidad esté blindada y lista para auditorías.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Beneficio 3: Estados Financieros al Instante -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">📊</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Estados financieros y libros a un solo clic</h4>
+            <p class="text-xs text-slate-500 mt-1">Genera balances generales, estados de resultados y reportes contables oficiales al instante. Revisa los libros contables actualizados diariamente para evaluar la rentabilidad real de la empresa y compartir la información de manera limpia con tu contador.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ficha Técnica de lo que Incluye -->
+      <div class="p-4 bg-emerald-50/50 border border-emerald-100/70 rounded-xl text-xs sm:text-sm text-slate-600 leading-relaxed">
+        <strong class="text-emerald-800 font-bold block mb-1">Características Técnicas Incluidas:</strong>
+        Plan único de cuentas • Gestión de Terceros • Comprobantes automatizados • Registro de Movimientos • Cruce de Cuentas por cobrar y por pagar • Cálculo de Impuestos • Cierres de periodo • Libros oficiales • Estados financieros digitales • Reportes contables exportables.
+      </div>
+    </div>
+
+    <!-- LADO DERECHO: El video de Canva en bucle automático visible -->
+    <div class="relative">
+      <!-- Contenedor estilo Pantalla de Computadora -->
+      <div class="bg-slate-900 rounded-2xl shadow-2xl overflow-hidden border border-slate-800">
+        
+        <!-- Barra superior del Navegador Simulado -->
+        <div class="bg-slate-800 px-4 py-3 flex items-center justify-between">
+          <div class="flex gap-1.5">
+            <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+          </div>
+          <div class="w-12"></div>
+        </div>
+
+        <!-- Contenedor del Video -->
+        <div class="relative aspect-video bg-slate-950 flex items-center justify-center">
+          <img src="/img/contavilidad.jpg" alt="" class="w-full h-full object-cover" >
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/20 to-transparent pointer-events-none"></div>
+        </div>
+
+      </div>
+      <p class="text-center text-xs text-slate-400 mt-3 italic">
+        💡 Visualización analítica: balances consolidados, plan de cuentas digital y reportes financieros automáticos.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Botón de acción rápido al final de la explicación -->
+  <div class="mt-12 p-6 bg-emerald-50/50 rounded-xl border border-emerald-100 flex flex-col sm:flex-row justify-between items-center gap-4">
+    <div class="text-center sm:text-left">
+      <h4 class="font-bold text-slate-800">¿Deseas automatizar los balances y la gestión fiscal de tu negocio?</h4>
+      <p class="text-xs text-slate-500">Añade el módulo de Contabilidad para unificar tus finanzas y agilizar la entrega de informes a tus asesores.</p>
+    </div>
+    <button 
+            class="px-5 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm rounded-xl shadow-md transition-all duration-200 cursor-pointer shrink-0">
+      Añadir Módulo Contabilidad
+    </button>
+  </div>
+
+</section>

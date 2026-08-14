@@ -1,0 +1,107 @@
+<section class="max-w-6xl mx-auto my-16 p-8 bg-white rounded-2xl shadow-xl border border-slate-100">
+  <!-- BOTÓN VOLVER: Estilizado, sutil y profesional -->
+      <button (click)="regresarAlCatalogo()" 
+              class="flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-slate-300 bg-slate-700/60 rounded-lg hover:bg-slate-700 hover:text-white transition-all duration-200 cursor-pointer border border-slate-600/30">
+        <span>←</span>
+        <span>Volver a Módulos</span>
+      </button>
+  <!-- Encabezado Enfocado en el Cliente -->
+  <div class="text-center max-w-3xl mx-auto mb-12">
+    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-rose-50 text-rose-700 border border-rose-100 uppercase tracking-wider">
+      Módulo de Recuperación de Capital
+    </span>
+    <h2 class="text-3xl sm:text-4xl font-black text-slate-800 tracking-tight mt-3">
+      Cartera y Gestión de Cobranza
+    </h2>
+    <p class="text-slate-500 mt-3 leading-relaxed">
+      Controla de forma estricta los créditos otorgados a tus clientes, realiza un seguimiento automático de saldos y liquida facturas vencidas sin errores.
+    </p>
+  </div>
+
+  <!-- Contenedor Principal: Explicación vs Demostración Visual -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    
+    <!-- LADO IZQUIERDO: Propuesta de Valor - Qué resolverás -->
+    <div class="space-y-6">
+      <h3 class="text-xl font-bold text-slate-800">¿Qué resolverás con este módulo?</h3>
+      
+      <div class="space-y-4">
+        <!-- Tarjeta de Beneficio 1: Blindaje de Crédito y Cupos -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">🛡️</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Control de cupos de crédito y condiciones de pago</h4>
+            <p class="text-xs text-slate-500 mt-1">Define de forma personalizada el monto máximo de crédito (cupo) y los días de plazo autorizados para cada cliente. El sistema bloqueará de forma automática nuevas ventas a clientes que superen su límite o tengan deudas vencidas, protegiendo tus finanzas.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Beneficio 2: Control de Saldos y Abonos -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">🧾</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Seguimiento exacto de saldos y abonos</h4>
+            <p class="text-xs text-slate-500 mt-1">Registra los abonos parciales o totales de tus clientes en segundos. El software recalcula los saldos pendientes en tiempo real, genera estados de cuenta profesionales y actualiza el historial crediticio de manera automática sin necesidad de cruces manuales.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Beneficio 3: Gestión de Mora y Vencimientos -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">⏰</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Gestión oportuna de cartera en mora</h4>
+            <p class="text-xs text-slate-500 mt-1">Monitorea los vencimientos de facturas mediante un semáforo visual de alertas. Identifica al instante quién te debe, cuántos días de retraso tiene y genera reportes de cobranza listos para recuperar tu cartera de forma rápida y efectiva.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ficha Técnica de lo que Incluye -->
+      <div class="p-4 bg-rose-50/50 border border-rose-100/70 rounded-xl text-xs sm:text-sm text-slate-600 leading-relaxed">
+        <strong class="text-rose-700 font-bold block mb-1">Características Técnicas Incluidas:</strong>
+        Créditos a clientes • Cupos autorizados • Condiciones y plazos de pago • Módulo de Cuentas por Cobrar • Registro de Abonos • Recálculo de Saldos • Control de Vencimientos • Estados de cuenta exportables • Historial crediticio • Gestión avanzada de mora.
+      </div>
+    </div>
+
+    <!-- LADO DERECHO: El video de Canva en bucle automático visible -->
+    <div class="relative">
+      <!-- Contenedor estilo Pantalla de Computadora -->
+      <div class="bg-slate-900 rounded-2xl shadow-2xl overflow-hidden border border-slate-800">
+        
+        <!-- Barra superior del Navegador Simulado -->
+        <div class="bg-slate-800 px-4 py-3 flex items-center justify-between">
+          <div class="flex gap-1.5">
+            <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+          </div>
+          <span class="text-xs font-mono text-slate-400">br-solutions-collections.mp4</span>
+          <div class="w-12"></div>
+        </div>
+
+        <!-- Contenedor del Video -->
+        <div class="relative aspect-video bg-slate-950 flex items-center justify-center">
+            <img src="/img/cart-cobranz.jpg" alt="" class="w-full h-full object-cover" >
+
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/20 to-transparent pointer-events-none"></div>
+        </div>
+
+      </div>
+      <p class="text-center text-xs text-slate-400 mt-3 italic">
+        💡 Monitoreo en vivo de cuentas por cobrar, alertas de facturas vencidas y recibos de caja por abonos.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Botón de acción rápido al final de la explicación -->
+  <div class="mt-12 p-6 bg-rose-50/50 rounded-xl border border-rose-100 flex flex-col sm:flex-row justify-between items-center gap-4">
+    <div class="text-center sm:text-left">
+      <h4 class="font-bold text-slate-800">¿Quieres mantener bajo control las deudas de tus clientes?</h4>
+      <p class="text-xs text-slate-500">Añade el módulo de Cartera y Cobranza para asegurar el retorno de tu capital y vender a crédito de forma segura.</p>
+    </div>
+    <button 
+            class="px-5 py-3 bg-rose-600 hover:bg-rose-700 text-white font-medium text-sm rounded-xl shadow-md transition-all duration-200 cursor-pointer shrink-0">
+      Añadir Módulo Cartera
+    </button>
+  </div>
+
+</section>

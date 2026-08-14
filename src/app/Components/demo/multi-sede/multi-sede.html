@@ -1,0 +1,105 @@
+<section class="max-w-6xl mx-auto my-16 p-8 bg-white rounded-2xl shadow-xl border border-slate-100">
+  <!-- BOTÓN VOLVER: Estilizado, sutil y profesional -->
+      <button (click)="regresarAlCatalogo()" 
+              class="flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-slate-300 bg-slate-700/60 rounded-lg hover:bg-slate-700 hover:text-white transition-all duration-200 cursor-pointer border border-slate-600/30">
+        <span>←</span>
+        <span>Volver a Módulos</span>
+      </button>
+  <!-- Encabezado Enfocado en el Cliente -->
+  <div class="text-center max-w-3xl mx-auto mb-12">
+    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-100 uppercase tracking-wider">
+      Módulo de Expansión Empresarial
+    </span>
+    <h2 class="text-3xl sm:text-4xl font-black text-slate-800 tracking-tight mt-3">
+      Multi-Sede y Multi-Bodega
+    </h2>
+    <p class="text-slate-500 mt-3 leading-relaxed">
+      Controla múltiples puntos de venta, gestiona almacenes logísticos independientes y unifica las operaciones de tu empresa bajo una sola plataforma en la nube.
+    </p>
+  </div>
+
+  <!-- Contenedor Principal: Explicación vs Demostración Visual -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    
+    <!-- LADO IZQUIERDO: Propuesta de Valor - Qué resolverás -->
+    <div class="space-y-6">
+      <h3 class="text-xl font-bold text-slate-800">¿Qué resolverás con este módulo?</h3>
+      
+      <div class="space-y-4">
+        <!-- Tarjeta de Beneficio 1: Inventario y Sucursales en línea -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">🏢</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Control absoluto de sucursales, bodegas y cajas</h4>
+            <p class="text-xs text-slate-500 mt-1">Monitorea de forma aislada las existencias, las ventas en caja y los usuarios asignados a cada punto físico. Tu equipo en la Sede A podrá consultar en un segundo si queda stock disponible en la Bodega B, acelerando la atención al cliente sin cruzar llamadas ni datos manuales.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Beneficio 2: Transferencias e Inventario Logístico -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">🔄</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Transferencias de mercancía seguras y auditadas</h4>
+            <p class="text-xs text-slate-500 mt-1">Gestiona el movimiento de mercancías entre almacenes o sedes mediante órdenes de traslado digitales. El ERP rastrea la salida en origen y exige la confirmación de recepción en destino, evitando pérdidas de stock en el camino y manteniendo los inventarios cuadrados.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Beneficio 3: Reportes Consolidados de todo el Negocio -->
+        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl shrink-0">📊</div>
+          <div>
+            <h4 class="font-bold text-slate-800 text-base">Reportes consolidados globales en un clic</h4>
+            <p class="text-xs text-slate-500 mt-1">Olvídate de unificar reportes al final del mes. Visualiza gráficos comparativos de ventas por sede, analiza los costos y auditorías logísticas globales o filtra el rendimiento de cada caja de forma independiente, obteniendo la radiografía real de tu crecimiento.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ficha Técnica de lo que Incluye -->
+      <div class="p-4 bg-blue-50/50 border border-blue-100/70 rounded-xl text-xs sm:text-sm text-slate-600 leading-relaxed">
+        <strong class="text-blue-700 font-bold block mb-1">Características Técnicas Incluidas:</strong>
+        Administración de Sedes ilimitadas • Control de Bodegas independientes • Apertura de Cajas por sucursal • Permisos de Usuarios por sede • Conteo de Inventario por sede • Historial de Ventas por sede • Registro de Compras por sucursal • Módulo de Transferencias logísticas • Reportes consolidados e indicadores globales.
+      </div>
+    </div>
+
+    <!-- LADO DERECHO: El video de Canva en bucle automático visible -->
+    <div class="relative">
+      <!-- Contenedor estilo Pantalla de Computadora -->
+      <div class="bg-slate-900 rounded-2xl shadow-2xl overflow-hidden border border-slate-800">
+        
+        <!-- Barra superior del Navegador Simulado -->
+        <div class="bg-slate-800 px-4 py-3 flex items-center justify-between">
+          <div class="flex gap-1.5">
+            <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+          </div>
+          <div class="w-12"></div>
+        </div>
+
+        <!-- Contenedor del Video -->
+        <div class="relative aspect-video bg-slate-950 flex items-center justify-center">
+          <img src="/img/multi-sede.jpg" alt="" class="w-full h-full object-cover" >
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/20 to-transparent pointer-events-none"></div>
+        </div>
+
+      </div>
+      <p class="text-center text-xs text-slate-400 mt-3 italic">
+        💡 Monitor de sedes: control de inventario geolocalizado, transferencias internas y estadísticas de ventas unificadas.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Botón de acción rápido al final de la explicación -->
+  <div class="mt-12 p-6 bg-blue-50/50 rounded-xl border border-blue-100 flex flex-col sm:flex-row justify-between items-center gap-4">
+    <div class="text-center sm:text-left">
+      <h4 class="font-bold text-slate-800">¿Listo para expandir tu empresa y administrar todas tus sucursales sin esfuerzo?</h4>
+      <p class="text-xs text-slate-500">Añade el módulo de Multi-Sede a tu cotización para centralizar la logística y la facturación de todos tus puntos físicos.</p>
+    </div>
+    <button 
+            class="px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm rounded-xl shadow-md transition-all duration-200 cursor-pointer shrink-0">
+      Añadir Módulo Multi-Sede
+    </button>
+  </div>
+
+</section>
