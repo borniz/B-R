@@ -1,5 +1,5 @@
 import { CurrencyPipe } from '@angular/common';
-import { Component, computed, signal } from '@angular/core';
+import { Component, computed, Injectable, signal } from '@angular/core';
 import { Route, Router, RouterModule } from '@angular/router';
 
 interface ModuloERP {
@@ -25,6 +25,7 @@ interface DetailModulo {
   templateUrl: './servicios.html',
   styleUrl: './servicios.css',
 })
+@Injectable({providedIn:'root'})
 export class Servicios {
   clickModule = signal<DetailModulo | null>(null);
   valorMen=signal<number>(0);
@@ -114,6 +115,12 @@ export class Servicios {
       descripcion: 'Integracion con aplicaciones Externas',
       seleccionado: false,
     },
+    {
+      id:'pageweb',
+      nombre:'Pagina Web',
+      descripcion:'Creacion de la pagina web',
+      seleccionado:false
+    }
   ];
   detail: DetailModulo[] = [
     {
@@ -361,19 +368,21 @@ Reportes por caja`,
       valorIm: 500000,
       select: false,
     },
+    
   ];
 
   selectionModule(id: string): void {
     if (this.clickModule()?.id === id) {
       this.clickModule.set(null);
     } else {
-      this.router.navigate([`/${id}`])
+      this.router.navigate([`/${id}`],{state:{stateervicio:id}})
       const infoExtendida = this.detail.find((d) => d.id === id);
       if (infoExtendida) {
         this.clickModule.set(infoExtendida);
       }
     }
   } // Alternar la selección de un módulo
+  
 toggleModulo(id: string): void {
     const modulo = this.modulos.find((m) => m.id === id);
     if (modulo) {

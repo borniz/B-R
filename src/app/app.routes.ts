@@ -16,6 +16,7 @@ import { Nomina } from './Components/demo/nomina/nomina';
 import { Post } from './Components/demo/post/post';
 import { Report } from './Components/demo/report/report';
 import { UserRol } from './Components/demo/user-rol/user-rol';
+import { Pageweb } from './Components/demo/pageweb/pageweb';
 export const routes: Routes = [
     {path:'',redirectTo:'home',pathMatch:'full'},
     {path:'home',component:Home},
@@ -35,6 +36,7 @@ export const routes: Routes = [
     {path:'post',component:Post},
     {path:'report',component:Report},
     {path:'userRol',component:UserRol},
+    {path:'pageweb',component:Pageweb}
     
     
 ];
