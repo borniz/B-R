@@ -8,13 +8,15 @@ interface ModuloERP {
   descripcion: string;
   seleccionado: boolean;
   valor?: number;
+  valorAnual?: number;
   valorIm?: number;
 }
 interface DetailModulo {
   id: string;
   detalle: string;
   valorM: number;
-  valorIm: number;
+  valorIm?: number;
+  valorAnual?:number,
   select: boolean;
 }
 
@@ -29,6 +31,7 @@ interface DetailModulo {
 export class Servicios {
   clickModule = signal<DetailModulo | null>(null);
   valorMen=signal<number>(0);
+  valorAnual=signal<number>(0);
   constructor(private router:Router){}
   modulos: ModuloERP[] = [
     {
@@ -202,7 +205,7 @@ SSL`,
 
 Tiendas, ferreterías, distribuidores, almacenes, empresas comerciales.   `,
       valorM: 49900,
-      valorIm: 499000,
+      valorAnual: 499000,
       select: false,
     },
     {
@@ -226,7 +229,7 @@ Tiendas, ferreterías, distribuidores, almacenes, empresas comerciales.   `,
 -Reportes
   `,
       valorM: 89900,
-      valorIm: 899000,
+      valorAnual: 899000,
       select: false,
     },
     {
@@ -242,7 +245,7 @@ Formularios
 Google Analytics
 Optimización móvil`,
       valorM: 149900,
-      valorIm: 1499000,
+      valorAnual: 1499000,
       select: false,
     },
     {
@@ -259,7 +262,7 @@ Optimización móvil`,
 -Historial
 -Cuentas por pagar básicas`,
       valorM: 249900,
-      valorIm: 2499000,
+      valorAnual: 2499000,
       select: false,
     },
     {
@@ -278,6 +281,7 @@ Optimización móvil`,
 -Conciliación básica
 -Flujo de efectivo`,
       valorM: 39900,
+      valorAnual: 399000,
       valorIm: 799000,
       select: false,
     },
@@ -296,6 +300,7 @@ Optimización móvil`,
 -Historial
 -Gestión de mora`,
       valorM: 59900,
+      valorAnual: 599000,
       valorIm: 1499000,
       select: false,
     },
@@ -315,6 +320,7 @@ Optimización móvil`,
 -Estados financieros
 -Reportes contables`,
       valorM: 79900,
+      valorAnual: 799000,
       valorIm: 2499000,
       select: false,
     },
@@ -444,6 +450,7 @@ toggleModulo(id: string): void {
       // Asignamos los precios dinámicamente al módulo básico
       modulo.valor = valorMod?.valorM || 0;
       modulo.valorIm = valorMod?.valorIm || 0;
+      modulo.valorAnual = valorMod?.valorAnual || 0;
     }
   }
    valorMensualTotal = (() => {
@@ -456,6 +463,13 @@ toggleModulo(id: string): void {
     return this.modulos
       .filter((m)=>m.seleccionado)
       .reduce((total,m)=>total +(m.valorIm ||0),0)
+  })
+  ValorAnual =(()=>{
+    const total = this.modulos
+    .filter(m => m.seleccionado)
+    .reduce((suma, m) => suma + (m.valorAnual || 0), 0);
+  
+  return total;
   })
   obtenerServiciosContratados() {
     return this.modulos.filter((m) => m.seleccionado);
