@@ -23,7 +23,7 @@
             <h3 class="text-lg font-semibold text-slate-800 inline-block [display:list-item] [list-style-position:inside] marker:text-blue-600 marker:font-bold marker:text-lg">
               <span class="ml-1">{{ modulo.nombre }}</span>
             </h3>
-            <p class="text-sm text-slate-500 mt-1 pl-6">{{ modulo.descripcion }}</p>
+            <p class="text-sm text-slate-500 mt-1 pl-6 whitespace-pre-line">{{ modulo.descripcion }}</p>
           </div>
           
           <!-- Botones de acción con Tailwind -->
@@ -117,7 +117,7 @@
 
   <div class="border-t border-slate-200 pt-4 flex justify-between items-center">
     <div>
-      <p class="text-sm font-medium text-slate-500">Valor de la Implementación Estimado:</p>
+      <p class="text-sm font-medium text-slate-500">Valor anual Estimado:</p>
       <p class="text-xs text-slate-400">Sujeto a cambios según personalizaciones adicionales</p>
     </div>
     
@@ -126,6 +126,7 @@
       <p class="text-2xl font-black text-slate-800">
         {{ valorImplementacion() | currency:'COP':'symbol':'1.0-0':'es-CO' }}
       </p>
+      <p>/Anual</p>
     </div>
   </div>
 }

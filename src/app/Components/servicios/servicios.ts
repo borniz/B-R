@@ -33,44 +33,106 @@ export class Servicios {
   modulos: ModuloERP[] = [
     {
       id: 'inv',
-      nombre: 'Productos e Inventarios',
-      descripcion: 'Control de productos, existencias, movimientos y bodegas',
+      nombre: 'Básica',
+      descripcion: `Productos e Inventario,
+-Clientes,
+-Ventas,
+-Facturación PDF
+-Envío de facturas por correo
+-Dashboard básico
+-2 usuarios
+-1 bodega
+-Soporte básico`,
       seleccionado: false,
     },
     {
       id: 'venFact',
-      nombre: 'Ventas + Facturacion',
-      descripcion: 'Emisión de facturas y notas de crédito fiscales.',
+      nombre: 'Profesional',
+      descripcion: `Todo lo anterior +
+
+Compras y proveedores
+Caja y tesorería
+Cartera y cobranza
+POS
+Reportes
+5 usuarios
+Hasta 3 cajas
+Inventario avanzado`,
       seleccionado: false,
     },
     {
       id: 'post',
-      nombre: 'Punto de venta post',
-      descripcion: 'Ventas rapidas, cajas y cajeros.',
+      nombre: 'Avanzado',
+      descripcion: `Todo lo anterior +
+
+Contabilidad
+CRM
+Multi-sede
+Multi-bodega
+Usuarios y roles avanzados
+Auditoría
+Reportes/BI
+10 usuarios
+API empresarial básica`,
       seleccionado: false,
     },
     {
       id: 'comProv',
-      nombre: 'Compras y Provedores',
-      descripcion: 'Compras, recepcion y provedores',
+      nombre: 'Empresarial',
+      descripcion: `Todo lo anterior +
+
+Usuarios ilimitados
+Bodegas/sedes según necesidad
+API empresarial
+Integraciones
+Automatizaciones
+Soporte prioritario
+Personalizaciones
+Facturación electrónica como adicional o incluida según negociación`,
       seleccionado: false,
     },
     {
       id: 'cajTeso',
-      nombre: 'Caja y Tesoreria',
-      descripcion: 'Dinero, Ingresos, Egresos y cierres',
+      nombre: 'Página Web Básica',
+      descripcion: `Diseño responsive
+Vista Inicio
+Vista Nosotros
+Vista Servicios
+Vista Contacto
+boton WhatsApp
+Google Maps
+Formulario de contacto`,
       seleccionado: false,
     },
     {
       id: 'cartCob',
-      nombre: 'Cartera y Cobranza',
-      descripcion: 'Creditos, cuentas por cobrar y pagos',
+      nombre: 'Página Web Profesional',
+      descripcion: `Todo lo anterior
+Diseño personalizado
+Catálogo de productos
+Galería
+SEO básico
+Redes sociales
+Blog
+Formularios
+Google Analytics
+Optimización móvil`,
       seleccionado: false,
     },
     {
       id: 'conta',
-      nombre: 'Contabilidad',
-      descripcion: 'Gestion contable y financiera',
+      nombre: 'Tienda Online',
+      descripcion: `Catálogo
+Carrito
+Clientes
+Pedidos
+Integración de pagos
+WhatsApp
+Administración de productos
+Responsive
+Dominio
+Hosting
+SSL`,
       seleccionado: false,
     },
     {
@@ -127,27 +189,20 @@ export class Servicios {
       id: 'inv',
       detalle: `Incluye :
       -Catálogo de productos
--Categorías
--Marcas
--Presentaciones
--Unidades de medida
--Códigos de barras
--Precios
--Costos
--Existencias
--Entradas
--Salidas
--Ajustes
--Kardex
--Inventario físico
--Stock mínimo
--Alertas
--Bodegas
+      -Productos e Inventario
+      -Clientes
+      -Ventas
+      -Facturación PDF
+      -Envío de facturas por correo
+      -Dashboard básico
+-2 usuarios
+-1 bodega
+-Soporte básico
    Ideal para
 
 Tiendas, ferreterías, distribuidores, almacenes, empresas comerciales.   `,
-      valorM: 39900,
-      valorIm: 180000,
+      valorM: 49900,
+      valorIm: 499000,
       select: false,
     },
     {
@@ -170,29 +225,24 @@ Tiendas, ferreterías, distribuidores, almacenes, empresas comerciales.   `,
 -Historial
 -Reportes
   `,
-      valorM: 49900,
-      valorIm: 200000,
+      valorM: 89900,
+      valorIm: 899000,
       select: false,
     },
     {
       id: 'post',
-      detalle: `Este servicio está pensado para negocios que venden directamente al consumidor.
-  Incluye: 
-POS
-Cajas
-Cajeros
-Apertura
-Cierre
-Arqueo
-Venta rápida
-Código de barras
-Medios de pago
-Impresión
-Devoluciones
-Descuentos
-Reportes por caja`,
-      valorM: 39900,
-      valorIm: 200000,
+      detalle: `Todo lo anterior
+Diseño personalizado
+Catálogo de productos
+Galería
+SEO básico
+Redes sociales
+Blog
+Formularios
+Google Analytics
+Optimización móvil`,
+      valorM: 149900,
+      valorIm: 1499000,
       select: false,
     },
     {
@@ -208,8 +258,8 @@ Reportes por caja`,
 -Costos
 -Historial
 -Cuentas por pagar básicas`,
-      valorM: 39900,
-      valorIm: 200000,
+      valorM: 249900,
+      valorIm: 2499000,
       select: false,
     },
     {
@@ -227,8 +277,8 @@ Reportes por caja`,
 -Cierres
 -Conciliación básica
 -Flujo de efectivo`,
-      valorM: 29900,
-      valorIm: 150000,
+      valorM: 39900,
+      valorIm: 799000,
       select: false,
     },
     {
@@ -245,8 +295,8 @@ Reportes por caja`,
 -Estado de cuenta
 -Historial
 -Gestión de mora`,
-      valorM: 39900,
-      valorIm: 200000,
+      valorM: 59900,
+      valorIm: 1499000,
       select: false,
     },
     {
@@ -264,8 +314,8 @@ Reportes por caja`,
 -Libros
 -Estados financieros
 -Reportes contables`,
-      valorM: 89900,
-      valorIm: 400000,
+      valorM: 79900,
+      valorIm: 2499000,
       select: false,
     },
     {
