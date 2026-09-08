@@ -32,6 +32,7 @@ export class Servicios {
   clickModule = signal<DetailModulo | null>(null);
   valorMen=signal<number>(0);
   valorAnual=signal<number>(0);
+  moduloseleccion = signal<ModuloERP[]>([]);
   constructor(private router:Router){}
   modulos: ModuloERP[] = [
     {
@@ -451,6 +452,7 @@ toggleModulo(id: string): void {
       modulo.valor = valorMod?.valorM || 0;
       modulo.valorIm = valorMod?.valorIm || 0;
       modulo.valorAnual = valorMod?.valorAnual || 0;
+      this.moduloseleccion.set(this.modulos.filter((m) => m.seleccionado));
     }
   }
    valorMensualTotal = (() => {
