@@ -26,7 +26,7 @@ export class Home {
 
   // Control de WhatsApp Flotante
   mostrarMenuWhatsapp: boolean = false;
-  numeroTelefono: string = '51987654321'; // Reemplaza con tu número real
+  numeroTelefono: string = '573134398489'; // Reemplaza con tu número real
 
   // ESTRUCTURA DE PLANES ERP (Extraídos de tus capturas de pantalla)
   planesERP = [
