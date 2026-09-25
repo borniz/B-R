@@ -1,10 +1,11 @@
 <!-- ========================================== -->
 <!-- PARTE 1: NAVBAR Y SECCIÓN HERO             -->
 <!-- ========================================== -->
-<div class="min-h-screen bg-slate-50 font-sans text-slate-800 antialiased selection:bg-blue-500 selection:text-white">
+
+<div class="min-h-screen bg-slate-50 font-sans text-slate-800 antialiased selection:bg-blue-500 selection:text-white  ">
 
   <!-- NAVBAR PREMIUM -->
-  <nav class="sticky top-0 z-40 w-full border-b border-slate-100 bg-white/80 backdrop-blur-md">
+  <nav class="sticky top-0 z-40 w-full border-b border-slate-100 bg-white/80 backdrop-blur-md bg-linear-to-r from-blue-700/[0.5] from-5% to-slate-100">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         
@@ -42,7 +43,7 @@
   </nav>
 
   <!-- HERO SECTION -->
-  <header class="relative overflow-hidden bg-gradient-to-b from-blue-50/50 via-white to-slate-50 py-16 lg:py-24">
+  <header class="relative overflow-hidden bg-gradient-to-b from-blue-50/50 via-white to-slate-50 py-16 lg:py-24 bg-linear-to-b from-blue-700 to-slate-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="grid items-center gap-12 lg:grid-cols-12">
         <div class="space-y-6 lg:col-span-7 text-center lg:text-left">
@@ -78,10 +79,47 @@
       </div>
     </div>
   </header>
+
+  <section class="py-20 bg-linear-to-b from-slate-200 to-blue-700/[0.5]">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid gap-8 md:grid-cols-2">
+        
+        <!-- COLUMNA 1: EL DOLOR ACTUAL DEL CLIENTE -->
+        <div class="rounded-2xl border border-rose-500/10 bg-rose-950/[0.4] p-6 md:p-8 space-y-4">
+          <div class="flex items-center space-x-3 text-rose-400 font-bold">
+            <span class="text-xl">❌</span>
+            <h3 class="text-lg text-white">Tu negocio hoy (Sin ARODYX)</h3>
+          </div>
+          <ul class="space-y-3.5 text-sm text-slate-200">
+            <li class="flex items-start"><span class="text-rose-500 mr-2.5">▪</span> Pérdidas hormiga de dinero e inventario que notas al final del mes.</li>
+            <li class="flex items-start"><span class="text-rose-500 mr-2.5">▪</span> Esclavo de tu propio local: si tú no estás presente, el negocio no funciona igual.</li>
+            <li class="flex items-start"><span class="text-rose-500 mr-2.5">▪</span> Libretas perdidas, cuentas mal hechas a mano y descuadres de caja estresantes.</li>
+          </ul>
+        </div>
+
+        <!-- COLUMNA 2: LA LIBERTAD CON TU SOFTWARE -->
+        <div class="rounded-2xl border border-emerald-500/10 bg-emerald-950/[0.4] p-6 md:p-8 space-y-4 relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-emerald-500/10 text-emerald-400 font-bold text-[10px] uppercase tracking-widest px-3 py-1 rounded-bl-xl">El Cambio</div>
+          <div class="flex items-center space-x-3 text-emerald-400 font-bold">
+            <span class="text-xl">🛡️</span>
+            <h3 class="text-lg text-white">Tu negocio en piloto automático</h3>
+          </div>
+          <ul class="space-y-3.5 text-sm text-slate-200">
+            <li class="flex items-start"><span class="text-emerald-400 mr-2.5">✓</span> Alertas instantáneas en tu celular cada vez que se vende algo o queda poco stock.</li>
+            <li class="flex items-start"><span class="text-emerald-400 mr-2.5">✓</span> Libertad total: supervisas restaurantes, ferreterías o tiendas desde cualquier lugar del mundo.</li>
+            <li class="flex items-start"><span class="text-emerald-400 mr-2.5">✓</span> Reportes gráficos automáticos de ganancias netas diarias sin tocar una calculadora.</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
 <!-- ========================================== -->
 <!-- PARTE 2: CONMUTADOR Y PLANES DE PRECIO ERP -->
 <!-- ========================================== -->
-  <section id="precios-erp" class="py-20 bg-white">
+  <section id="precios-erp" class="py-20 bg-linear-to-b from-blue-700/[0.5] to-slate-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       
       <!-- Encabezado y Conmutador de Facturación -->
@@ -134,7 +172,7 @@
 <!-- ========================================== -->
 <!-- PARTE 3: SERVICIOS DE DESARROLLO WEB       -->
 <!-- ========================================== -->
-  <section id="desarrollo-web" class="py-20 bg-slate-50 border-t border-slate-100">
+  <section id="desarrollo-web" class="py-20 bg-slate-50 border-t border-slate-100 bg-linear-to-b from-slate-200 to-blue-700/[0.5]">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-2xl mx-auto mb-16">
@@ -171,7 +209,7 @@
 <!-- PARTE 4: FAQS, ASISTENTE Y BOTÓN WHATSAPP  -->
 <!-- ========================================== -->
   <!-- SECCIÓN DE PREGUNTAS FRECUENTES (FAQs) -->
-  <section id="faqs" class="py-20 bg-white border-t">
+  <section id="faqs" class="py-20  border-t bg-linear-to-b from-blue-700/[0.5] to-slate-200">
     <div class="mx-auto max-w-3xl px-4 sm:px-6">
       <h2 class="text-3xl font-extrabold text-slate-900 text-center mb-10">Preguntas Frecuentes</h2>
       <div class="space-y-4">
